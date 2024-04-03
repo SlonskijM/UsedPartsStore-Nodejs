@@ -163,6 +163,9 @@ const Body = DataBase.define(
   },
 );
 
+Car.hasMany(Announcement);
+Announcement.belongsTo(Car);
+
 Body.hasMany(Announcement);
 Announcement.belongsTo(Body);
 
